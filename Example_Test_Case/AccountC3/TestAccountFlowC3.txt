@@ -1,0 +1,102 @@
+*** Settings ***
+Library		Selenium2Library	timeout=4 	run_on_failure=Nothing
+Test Setup	OPEN SPN
+
+*** Keywords ***
+OPEN SPN
+	Open Browser	https://${ip}	gc
+
+*** Variables ***
+${truelogin}	igaamo.22@gmail.com
+${correctpass}	123456
+${ip}	app.flowaccount.com/th/account/login
+
+
+*** Test Cases ***
+Test Case No.1
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-quotation-btn"]/a/div[1]
+	Wait Until Page Contains	ข้อมูลผู้ติดต่อ
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[1]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]
+	Input Text	_overlayItems.Name	Pen
+	Input Text	_overlayItems.Description	Pen
+	Input Text	_overlayItems.Quantity	100
+	Input Text	_overlayItems.PricePerUnit	4.50
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[2]/td[4]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]
+	Input Text	_overlayItems.Name	Pencil
+	Input Text	_overlayItems.Description	Pencil
+	Input Text	_overlayItems.Quantity	500
+	Input Text	_overlayItems.PricePerUnit	2.50
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[3]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]
+	Input Text	_overlayItems.Name	Rubber
+	Input Text	_overlayItems.Description	Rubber
+	Input Text	_overlayItems.Quantity	310
+	Input Text	_overlayItems.PricePerUnit	0.75
+	Wait Until Page Contains	1932.5
+	Close Browser
+
+Test Case No.2
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-quotation-btn"]/a/div[1]
+	Wait Until Page Contains	ข้อมูลผู้ติดต่อ
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[1]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]
+	Input Text	_overlayItems.Name	Pen
+	Input Text	_overlayItems.Description	Pen
+	Input Text	_overlayItems.Quantity	100
+	Input Text	_overlayItems.PricePerUnit	4.50
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[2]/td[4]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]
+	Input Text	_overlayItems.Name	Pencil
+	Input Text	_overlayItems.Description	Pencil
+	Input Text	_overlayItems.Quantity	500
+	Input Text	_overlayItems.PricePerUnit	2.50
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[3]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]
+	Input Text	_overlayItems.Name	Rubber
+	Input Text	_overlayItems.Description	Rubber
+	Input Text	_overlayItems.Quantity	310
+	Input Text	_overlayItems.PricePerUnit	0.75
+	Input Text	discountPercentageInput	20
+	Wait Until Page Contains	1546
+	Close Browser
+
+Test Case No.3
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-quotation-btn"]/a/div[1]
+	Wait Until Page Contains	ข้อมูลผู้ติดต่อ
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[1]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]
+	Input Text	_overlayItems.Name	Pen
+	Input Text	_overlayItems.Description	Pen
+	Input Text	_overlayItems.Quantity	100
+	Input Text	_overlayItems.PricePerUnit	4.50
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[2]/td[4]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]
+	Input Text	_overlayItems.Name	Pencil
+	Input Text	_overlayItems.Description	Pencil
+	Input Text	_overlayItems.Quantity	500
+	Input Text	_overlayItems.PricePerUnit	2.50
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[3]
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]
+	Input Text	_overlayItems.Name	Rubber
+	Input Text	_overlayItems.Description	Rubber
+	Input Text	_overlayItems.Quantity	310
+	Input Text	_overlayItems.PricePerUnit	0.75
+	Input Text	discountPercentageInput	10
+	Click Element	//*[@id="documentForm"]/div/section[3]/div[2]/div[2]/div/div[6]/div[1]/div[1]/label/label/i[1]/button/i[2]
+	Click Element	//*[@id="WithHeld"]/option[5]
+	Wait Until Page Contains	1687.07
+	Close Browser

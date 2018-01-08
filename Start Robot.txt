@@ -1,0 +1,19 @@
+﻿1 โหลด python เเตกไว้ที่ไหนก็ได้ตามใจ
+2 Edit เพิ่ม Path [Example >> “C:\Python27\;C:\Python27\Scripts\”] ที่ System Variables 
+3 เอา get-pip.py ไปไว้ในโฟลเดอร์ python เเล้วรันคำสั่ง get-pip.py
+4 pip install robotframework
+5 pybot –version เช็คการทำงาน
+6 pip install robotframework-selenium2library
+=====================================อยากดิบเขียนสดบนโน้ตเเพดเเล้วรันผ่านคำสั่ง pybot=====================================
+1 ถ้าอยากเขียนผ่าน text editor
+2  ติดตั้ง Sublime Text เวอร์ชัน 2 
+3 copy code ที่ https://packagecontrol.io/installation#st2
+4 เปิด view > console  ที่ sublime แปะโค้ดเเล้วรัน
+5 restart sublime > แล้วเลือก Preferance กด Package Control จากนั้นพิมพ์คำว่า install เลือก install package พิมพ์ Robot Framework Assistant เเล้วลง
+
+=====================================Allure Report=====================================
+1 โหลด allure-commandline เเตกไว้ที่ไหนก็ได้ตามใจ
+2 Edit เพิ่ม Path [Example >> “C:\Python27\;C:\Python27\Scripts\”] ที่ System Variables 
+3 $pip install robotframework-allurereport
+4 $allure generate <path of allure report>
+5 $allure report open

@@ -1,0 +1,152 @@
+*** Settings ***
+Library		Selenium2Library	timeout=4 	run_on_failure=Nothing
+Test Setup	OPEN SPN
+
+*** Keywords ***
+OPEN SPN
+	Open Browser	https://${ip}	gc
+
+*** Variables ***
+${truelogin}	igaamo.22@gmail.com
+${correctpass}	123456
+${ip}	app.flowaccount.com/th/account/login
+
+
+*** Test Cases ***
+Test Case No.1
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[2]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="TaxRate"]/option[5]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,455.00
+	Close Browser
+
+Test Case No.2
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[2]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="wht-info-column"]/section/div/div/div/div[6]/div/div/label/i[1]/button/i[2]
+	Click Element	xpath=//*[@id="TaxRate"]/option[5]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,457.94
+	Close Browser
+
+Test Case No.3
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[4]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="TaxRate"]/option[7]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,350
+	Close Browser
+
+
+Test Case No.4
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[4]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="wht-info-column"]/section/div/div/div/div[6]/div/div/label/i[1]/button/i[2]
+	Click Element	xpath=//*[@id="TaxRate"]/option[7]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,359.81
+	Close Browser
+
+
+Test Case No.5
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[5]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="TaxRate"]/option[3]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,485
+	Close Browser
+
+
+Test Case No.6
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[5]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="TaxRate"]/option[2]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,488.75
+	Close Browser
+
+
+Test Case No.7
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[5]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="wht-info-column"]/section/div/div/div/div[6]/div/div/label/i[1]/button/i[2]
+	Click Element	xpath=//*[@id="TaxRate"]/option[3]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,485.98
+	Close Browser
+
+Test Case No.8
+	Input Text	UserName	${truelogin}
+	Input Password	Password	${correctpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Click Element	xpath=//*[@id="tour-company-setting-btn"]/a/div[1]/span/i
+	Wait Until Page Contains	ที่อยู่ผู้จำหน่าย
+	Click Element	xpath=//*[@id="Entity"]/option[3]
+	Wait Until Page Contains	ประเภทเงินได้ที่จ่าย
+	Click Element	xpath=//*[@id="IncomeType"]/option[5]
+	Input Text	IncomeTotal	1500
+	Click Element	xpath=//*[@id="wht-info-column"]/section/div/div/div/div[6]/div/div/label/i[1]/button/i[2]
+	Click Element	xpath=//*[@id="TaxRate"]/option[2]
+	Wait Until Page Contains	จำนวนชำระค่าบริการ
+	Wait Until Page Contains	1,489.49
+	Close Browser
+
+

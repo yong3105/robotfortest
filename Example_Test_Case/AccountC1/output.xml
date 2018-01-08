@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170303 09:53:43.063" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Yong\Desktop\Test Case\AccountC1\TestAccountFlowC1.txt" id="s1" name="TestAccountFlowC1">
+<test id="s1-t1" name="Login Fail with valid E-mail and false password">
+<kw type="setup" name="OPEN SPN">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://${ip}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170303 09:53:43.235" level="INFO">Opening browser 'gc' to base url 'https://app.flowaccount.com/th/account/login'</msg>
+<status status="PASS" endtime="20170303 09:53:52.598" starttime="20170303 09:53:43.235"></status>
+</kw>
+<status status="PASS" endtime="20170303 09:53:52.599" starttime="20170303 09:53:43.235"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>UserName</arg>
+<arg>${validlogin}</arg>
+</arguments>
+<msg timestamp="20170303 09:53:52.603" level="INFO">Typing text 'igaamo.22@gmail.com' into text field 'UserName'</msg>
+<status status="PASS" endtime="20170303 09:53:53.190" starttime="20170303 09:53:52.600"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>${falsepass}</arg>
+</arguments>
+<msg timestamp="20170303 09:53:53.192" level="INFO">Typing password into text field 'Password'</msg>
+<status status="PASS" endtime="20170303 09:53:53.767" starttime="20170303 09:53:53.192"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>tag=button</arg>
+</arguments>
+<msg timestamp="20170303 09:53:53.768" level="INFO">Clicking element 'tag=button'.</msg>
+<status status="PASS" endtime="20170303 09:53:56.092" starttime="20170303 09:53:53.768"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>ล็อดอินไม่สำเร็จ : อีเมล์หรือรหัสผ่านไม่ถูกต้อง123</arg>
+</arguments>
+<msg timestamp="20170303 09:54:11.159" level="FAIL">Text 'ล็อดอินไม่สำเร็จ : อีเมล์หรือรหัสผ่านไม่ถูกต้อง123' did not appear in 15 seconds</msg>
+<status status="FAIL" endtime="20170303 09:54:11.160" starttime="20170303 09:53:56.093"></status>
+</kw>
+<status status="FAIL" endtime="20170303 09:54:11.160" critical="yes" starttime="20170303 09:53:43.235">Text 'ล็อดอินไม่สำเร็จ : อีเมล์หรือรหัสผ่านไม่ถูกต้อง123' did not appear in 15 seconds</status>
+</test>
+<test id="s1-t2" name="Login Fail with invalid E-mail and false password">
+<kw type="setup" name="OPEN SPN">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://${ip}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170303 09:54:11.163" level="INFO">Opening browser 'gc' to base url 'https://app.flowaccount.com/th/account/login'</msg>
+<status status="PASS" endtime="20170303 09:54:24.873" starttime="20170303 09:54:11.163"></status>
+</kw>
+<status status="PASS" endtime="20170303 09:54:24.873" starttime="20170303 09:54:11.162"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>UserName</arg>
+<arg>${invalidlogin}</arg>
+</arguments>
+<msg timestamp="20170303 09:54:24.874" level="INFO">Typing text 'igaamo.9999@gmail.com' into text field 'UserName'</msg>
+<status status="PASS" endtime="20170303 09:54:25.654" starttime="20170303 09:54:24.873"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>${falsepass}</arg>
+</arguments>
+<msg timestamp="20170303 09:54:25.654" level="INFO">Typing password into text field 'Password'</msg>
+<status status="PASS" endtime="20170303 09:54:26.212" starttime="20170303 09:54:25.654"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>tag=button</arg>
+</arguments>
+<msg timestamp="20170303 09:54:26.213" level="INFO">Clicking element 'tag=button'.</msg>
+<status status="PASS" endtime="20170303 09:54:29.173" starttime="20170303 09:54:26.213"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>ไม่พบอีเมล์ในระบบ โปรดสมัครเข้าใช้งานหรือติดต่อเรา</arg>
+</arguments>
+<status status="PASS" endtime="20170303 09:54:29.230" starttime="20170303 09:54:29.173"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170303 09:54:32.292" starttime="20170303 09:54:29.230"></status>
+</kw>
+<status status="PASS" endtime="20170303 09:54:32.292" critical="yes" starttime="20170303 09:54:11.161"></status>
+</test>
+<test id="s1-t3" name="Login Fail with invalid E-mail and actual password">
+<kw type="setup" name="OPEN SPN">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://${ip}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170303 09:54:32.304" level="INFO">Opening browser 'gc' to base url 'https://app.flowaccount.com/th/account/login'</msg>
+<status status="PASS" endtime="20170303 09:55:08.457" starttime="20170303 09:54:32.303"></status>
+</kw>
+<status status="PASS" endtime="20170303 09:55:08.458" starttime="20170303 09:54:32.303"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>UserName</arg>
+<arg>${invalidlogin}</arg>
+</arguments>
+<msg timestamp="20170303 09:55:08.460" level="INFO">Typing text 'igaamo.9999@gmail.com' into text field 'UserName'</msg>
+<status status="PASS" endtime="20170303 09:55:09.234" starttime="20170303 09:55:08.458"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>${actualpass}</arg>
+</arguments>
+<msg timestamp="20170303 09:55:09.235" level="INFO">Typing password into text field 'Password'</msg>
+<status status="PASS" endtime="20170303 09:55:09.728" starttime="20170303 09:55:09.234"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>tag=button</arg>
+</arguments>
+<msg timestamp="20170303 09:55:09.729" level="INFO">Clicking element 'tag=button'.</msg>
+<status status="PASS" endtime="20170303 09:55:15.159" starttime="20170303 09:55:09.729"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>ไม่พบอีเมล์ในระบบ โปรดสมัครเข้าใช้งานหรือติดต่อเรา</arg>
+</arguments>
+<status status="PASS" endtime="20170303 09:55:15.222" starttime="20170303 09:55:15.161"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170303 09:55:18.282" starttime="20170303 09:55:15.222"></status>
+</kw>
+<status status="PASS" endtime="20170303 09:55:18.282" critical="yes" starttime="20170303 09:54:32.301"></status>
+</test>
+<test id="s1-t4" name="Login Success with valid E-mail and actual password">
+<kw type="setup" name="OPEN SPN">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://${ip}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170303 09:55:18.286" level="INFO">Opening browser 'gc' to base url 'https://app.flowaccount.com/th/account/login'</msg>
+<status status="PASS" endtime="20170303 09:55:29.750" starttime="20170303 09:55:18.286"></status>
+</kw>
+<status status="PASS" endtime="20170303 09:55:29.750" starttime="20170303 09:55:18.285"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>UserName</arg>
+<arg>${validlogin}</arg>
+</arguments>
+<msg timestamp="20170303 09:55:29.753" level="INFO">Typing text 'igaamo.22@gmail.com' into text field 'UserName'</msg>
+<status status="PASS" endtime="20170303 09:55:30.419" starttime="20170303 09:55:29.750"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>${actualpass}</arg>
+</arguments>
+<msg timestamp="20170303 09:55:30.422" level="INFO">Typing password into text field 'Password'</msg>
+<status status="PASS" endtime="20170303 09:55:30.985" starttime="20170303 09:55:30.422"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>tag=button</arg>
+</arguments>
+<msg timestamp="20170303 09:55:30.985" level="INFO">Clicking element 'tag=button'.</msg>
+<status status="PASS" endtime="20170303 09:55:43.815" starttime="20170303 09:55:30.985"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>วันนี้ทำอะไรดี?</arg>
+</arguments>
+<status status="PASS" endtime="20170303 09:55:44.032" starttime="20170303 09:55:43.816"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170303 09:55:47.114" starttime="20170303 09:55:44.032"></status>
+</kw>
+<status status="PASS" endtime="20170303 09:55:47.114" critical="yes" starttime="20170303 09:55:18.283"></status>
+</test>
+<status status="FAIL" endtime="20170303 09:55:47.117" starttime="20170303 09:53:43.063"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="3">Critical Tests</stat>
+<stat fail="1" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TestAccountFlowC1" pass="3">TestAccountFlowC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

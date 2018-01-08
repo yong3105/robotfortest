@@ -1,0 +1,146 @@
+{
+  "uid" : "5b43c5ad0e922522",
+  "name" : "Login1",
+  "title" : "Login 1",
+  "time" : {
+    "start" : 1490684780701,
+    "stop" : 1490684794008,
+    "duration" : 13307
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 7
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Login1",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "b4cf38bb81bc3d79",
+    "name" : "GmailLogin2",
+    "title" : "GmailLogin2"
+  },
+  "steps" : [ {
+    "name" : "Selenium2Library.Open Browser",
+    "title" : "Selenium2Library.Open Browser",
+    "time" : {
+      "start" : 1490684780717,
+      "stop" : 1490684787095,
+      "duration" : 6378
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Selenium2Library.Input Text",
+    "title" : "Selenium2Library.Input Text",
+    "time" : {
+      "start" : 1490684787111,
+      "stop" : 1490684787889,
+      "duration" : 778
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Selenium2Library.Click Button",
+    "title" : "Selenium2Library.Click Button",
+    "time" : {
+      "start" : 1490684787890,
+      "stop" : 1490684788175,
+      "duration" : 285
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Selenium2Library.Wait Until Element Is Visible",
+    "title" : "Selenium2Library.Wait Until Element Is Visible",
+    "time" : {
+      "start" : 1490684788175,
+      "stop" : 1490684788791,
+      "duration" : 616
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Selenium2Library.Input Password",
+    "title" : "Selenium2Library.Input Password",
+    "time" : {
+      "start" : 1490684788791,
+      "stop" : 1490684789259,
+      "duration" : 468
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Selenium2Library.Click Button",
+    "title" : "Selenium2Library.Click Button",
+    "time" : {
+      "start" : 1490684789259,
+      "stop" : 1490684790867,
+      "duration" : 1608
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Selenium2Library.Close Browser",
+    "title" : "Selenium2Library.Close Browser",
+    "time" : {
+      "start" : 1490684790867,
+      "stop" : 1490684794008,
+      "duration" : 3141
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "GmailLogin2"
+  }, {
+    "name" : "suite-name",
+    "value" : "GmailLogin2"
+  }, {
+    "name" : "thread",
+    "value" : "2404"
+  } ],
+  "parameters" : [ ]
+}

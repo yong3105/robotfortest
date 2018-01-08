@@ -1,0 +1,38 @@
+{
+  "id" : "Robot Framework",
+  "name" : "WIN-1N2T46ONGAB.localdomain",
+  "url" : "http://WIN-1N2T46ONGAB.localdomain:8000",
+  "parameter" : [ {
+    "name" : "Robot Framework Platform",
+    "key" : "Robot Framework Platform",
+    "value" : "win32"
+  }, {
+    "name" : "Robot Framework Version",
+    "key" : "Robot Framework Version",
+    "value" : "3.0.2"
+  }, {
+    "name" : "Robot Framework Full Version",
+    "key" : "Robot Framework Full Version",
+    "value" : "3.0.2 (Python 2.7.13 on win32)"
+  }, {
+    "name" : "Python version",
+    "key" : "Python version",
+    "value" : "2.7.13"
+  }, {
+    "name" : "Interpreter",
+    "key" : "Interpreter",
+    "value" : "Python"
+  }, {
+    "name" : "Robot Framework Hostname",
+    "key" : "Robot Framework Hostname",
+    "value" : "WIN-1N2T46ONGAB.localdomain"
+  }, {
+    "name" : "Allure Adapter version",
+    "key" : "Allure Adapter version",
+    "value" : "1.1.1"
+  }, {
+    "name" : "Robot Framework CLI Arguments",
+    "key" : "Robot Framework CLI Arguments",
+    "value" : "['C:\\\\Users\\\\Yong\\\\Desktop\\\\Robot\\\\GmailLogin2.robot']"
+  } ]
+}

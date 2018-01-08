@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170306 11:31:45.282" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Yong\Desktop\Test Case\AccountC3\TestAccountFlowC3.txt" id="s1" name="TestAccountFlowC3">
+<test id="s1-t1" name="Test Case No.1">
+<kw type="setup" name="OPEN SPN">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://${ip}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20170306 11:31:45.456" level="INFO">Opening browser 'gc' to base url 'https://app.flowaccount.com/th/account/login'</msg>
+<status status="PASS" endtime="20170306 11:32:22.340" starttime="20170306 11:31:45.456"></status>
+</kw>
+<status status="PASS" endtime="20170306 11:32:22.340" starttime="20170306 11:31:45.455"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>UserName</arg>
+<arg>${truelogin}</arg>
+</arguments>
+<msg timestamp="20170306 11:32:22.341" level="INFO">Typing text 'igaamo.22@gmail.com' into text field 'UserName'</msg>
+<status status="PASS" endtime="20170306 11:32:22.769" starttime="20170306 11:32:22.340"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>${correctpass}</arg>
+</arguments>
+<msg timestamp="20170306 11:32:22.771" level="INFO">Typing password into text field 'Password'</msg>
+<status status="PASS" endtime="20170306 11:32:23.051" starttime="20170306 11:32:22.771"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>tag=button</arg>
+</arguments>
+<msg timestamp="20170306 11:32:23.051" level="INFO">Clicking element 'tag=button'.</msg>
+<status status="PASS" endtime="20170306 11:32:55.599" starttime="20170306 11:32:23.051"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>วันนี้ทำอะไรดี?</arg>
+</arguments>
+<status status="PASS" endtime="20170306 11:32:55.655" starttime="20170306 11:32:55.599"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="tour-quotation-btn"]/a/div[1]</arg>
+</arguments>
+<msg timestamp="20170306 11:32:55.655" level="INFO">Clicking element 'xpath=//*[@id="tour-quotation-btn"]/a/div[1]'.</msg>
+<status status="PASS" endtime="20170306 11:32:55.792" starttime="20170306 11:32:55.655"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>ข้อมูลผู้ติดต่อ</arg>
+</arguments>
+<status status="PASS" endtime="20170306 11:32:57.919" starttime="20170306 11:32:55.792"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[1]</arg>
+</arguments>
+<msg timestamp="20170306 11:32:57.919" level="INFO">Clicking element '//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[1]'.</msg>
+<status status="PASS" endtime="20170306 11:32:58.670" starttime="20170306 11:32:57.919"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]</arg>
+</arguments>
+<msg timestamp="20170306 11:32:58.670" level="INFO">Clicking element '//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]'.</msg>
+<status status="PASS" endtime="20170306 11:32:58.853" starttime="20170306 11:32:58.670"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.Name</arg>
+<arg>Pen</arg>
+</arguments>
+<msg timestamp="20170306 11:32:58.853" level="INFO">Typing text 'Pen' into text field '_overlayItems.Name'</msg>
+<status status="PASS" endtime="20170306 11:32:59.100" starttime="20170306 11:32:58.853"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.Description</arg>
+<arg>Pen</arg>
+</arguments>
+<msg timestamp="20170306 11:32:59.100" level="INFO">Typing text 'Pen' into text field '_overlayItems.Description'</msg>
+<status status="PASS" endtime="20170306 11:32:59.344" starttime="20170306 11:32:59.100"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.Quantity</arg>
+<arg>100</arg>
+</arguments>
+<msg timestamp="20170306 11:32:59.344" level="INFO">Typing text '100' into text field '_overlayItems.Quantity'</msg>
+<status status="PASS" endtime="20170306 11:32:59.590" starttime="20170306 11:32:59.344"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.PricePerUnit</arg>
+<arg>4.50</arg>
+</arguments>
+<msg timestamp="20170306 11:32:59.590" level="INFO">Typing text '4.50' into text field '_overlayItems.PricePerUnit'</msg>
+<status status="PASS" endtime="20170306 11:33:00.650" starttime="20170306 11:32:59.590"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[2]/td[4]</arg>
+</arguments>
+<msg timestamp="20170306 11:33:00.650" level="INFO">Clicking element '//*[@id="documentForm"]/div/section[3]/div[1]/table/tbody/tr[2]/td[4]'.</msg>
+<status status="PASS" endtime="20170306 11:33:00.814" starttime="20170306 11:33:00.650"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]</arg>
+</arguments>
+<msg timestamp="20170306 11:33:00.816" level="INFO">Clicking element '//*[@id="documentForm"]/div/section[3]/div[1]/div/div/div[3]/span[2]/input[2]'.</msg>
+<status status="PASS" endtime="20170306 11:33:01.001" starttime="20170306 11:33:00.816"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.Name</arg>
+<arg>Pencil</arg>
+</arguments>
+<msg timestamp="20170306 11:33:01.001" level="INFO">Typing text 'Pencil' into text field '_overlayItems.Name'</msg>
+<status status="PASS" endtime="20170306 11:33:01.140" starttime="20170306 11:33:01.001"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.Description</arg>
+<arg>Pencil</arg>
+</arguments>
+<msg timestamp="20170306 11:33:01.140" level="INFO">Typing text 'Pencil' into text field '_overlayItems.Description'</msg>
+<status status="PASS" endtime="20170306 11:33:01.376" starttime="20170306 11:33:01.140"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.Quantity</arg>
+<arg>500</arg>
+</arguments>
+<msg timestamp="20170306 11:33:01.376" level="INFO">Typing text '500' into text field '_overlayItems.Quantity'</msg>
+<status status="PASS" endtime="20170306 11:33:01.505" starttime="20170306 11:33:01.376"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>_overlayItems.PricePerUnit</arg>
+<arg>2.50</arg>
+</arguments>

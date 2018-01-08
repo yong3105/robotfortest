@@ -1,0 +1,28 @@
+*** Settings ***
+Library		Selenium2Library	timeout=15 	run_on_failure=Nothing
+Test Setup	OPEN SPN
+
+*** Keywords ***
+OPEN SPN
+	Open Browser	https://${ip}	gc
+
+*** Variables ***
+${login}	igaamo.22@gmail.com
+${pass1}	123456789
+${pass2}	123456
+${ip}	app.flowaccount.com/th/account/login
+
+
+*** Test Cases ***
+Login1
+	Input Text	UserName	${login}
+	Input Password	Password	${pass1}
+	Click Element	tag=button
+	Close Browser
+
+Login2	
+	Input Text	UserName	${login}
+	Input Password	Password	${pass2}
+	Click Element	tag=button
+
+	Close Browser

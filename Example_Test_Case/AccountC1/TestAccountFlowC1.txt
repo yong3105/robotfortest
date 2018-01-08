@@ -1,0 +1,45 @@
+*** Settings ***
+Library		Selenium2Library	timeout=15 	run_on_failure=Nothing
+Test Setup	OPEN SPN
+
+*** Keywords ***
+OPEN SPN
+	Open Browser	https://${ip}	gc
+
+*** Variables ***
+${validlogin}	igaamo.22@gmail.com
+${actualpass}	123456
+${invalidlogin}	igaamo.9999@gmail.com
+${falsepass}	123456789
+${ip}	app.flowaccount.com/th/account/login
+
+
+*** Test Cases ***
+Login Fail with valid E-mail and false password
+	Input Text	UserName	${validlogin}
+	Input Password	Password	${falsepass}
+	Click Element	tag=button
+	Wait Until Page Contains	ล็อดอินไม่สำเร็จ : อีเมล์หรือรหัสผ่านไม่ถูกต้อง123
+	Close Browser
+
+Login Fail with invalid E-mail and false password
+	Input Text	UserName	${invalidlogin}
+	Input Password	Password	${falsepass}
+	Click Element	tag=button
+	Wait Until Page Contains	ไม่พบอีเมล์ในระบบ โปรดสมัครเข้าใช้งานหรือติดต่อเรา
+	Close Browser
+
+Login Fail with invalid E-mail and actual password
+	Input Text	UserName	${invalidlogin}
+	Input Password	Password	${actualpass}
+	Click Element	tag=button
+	Wait Until Page Contains	ไม่พบอีเมล์ในระบบ โปรดสมัครเข้าใช้งานหรือติดต่อเรา
+	Close Browser
+
+
+Login Success with valid E-mail and actual password
+	Input Text	UserName	${validlogin}
+	Input Password	Password	${actualpass}
+	Click Element	tag=button
+	Wait Until Page Contains	วันนี้ทำอะไรดี?
+	Close Browser

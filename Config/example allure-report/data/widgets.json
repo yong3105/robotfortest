@@ -1,0 +1,78 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "time" : {
+        "start" : 1490684780701,
+        "stop" : 1490684794008,
+        "duration" : 13307
+      }
+    },
+    "defects" : {
+      "totalCount" : 0,
+      "items" : [ ]
+    },
+    "xunit" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "uid" : "b4cf38bb81bc3d79",
+        "title" : "GmailLogin2",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 1,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 0
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Without feature",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 1,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 0
+        }
+      } ]
+    },
+    "environment" : [ {
+      "key" : "Allure Adapter version",
+      "value" : "1.1.1"
+    }, {
+      "key" : "Interpreter",
+      "value" : "Python"
+    }, {
+      "key" : "Python version",
+      "value" : "2.7.13"
+    }, {
+      "key" : "Robot Framework CLI Arguments",
+      "value" : "['C:\\\\Users\\\\Yong\\\\Desktop\\\\Robot\\\\GmailLogin2.robot']"
+    }, {
+      "key" : "Robot Framework Full Version",
+      "value" : "3.0.2 (Python 2.7.13 on win32)"
+    }, {
+      "key" : "Robot Framework Hostname",
+      "value" : "WIN-1N2T46ONGAB.localdomain"
+    }, {
+      "key" : "Robot Framework Platform",
+      "value" : "win32"
+    }, {
+      "key" : "Robot Framework Version",
+      "value" : "3.0.2"
+    } ]
+  }
+}
