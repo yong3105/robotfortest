@@ -1,2 +1,0 @@
-cd /home/uatadm/Desktop/SmartUI2018/Test/GotLogs
-./Gotlogs.sh
