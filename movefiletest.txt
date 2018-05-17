@@ -1,0 +1,5 @@
+cd /home/uatadm/Desktop/SmartUI2018/Test
+./movefile.sh
+cd /var/lib/jenkins/workspace/SmartUi2/Robottest
+
+sudo chown jenkins:jenkins CreatOrderDocsis.csv

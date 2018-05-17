@@ -1,0 +1,2 @@
+cd /home/uatadm/Desktop/SmartUI2018/Test
+./Runjenkinstest.sh
